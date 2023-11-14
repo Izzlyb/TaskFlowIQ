@@ -34,3 +34,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Creating path convention when using the App router and the app sub-directory structure
+
+###  create 
+app/example/page.tsx
+    the tsx file does not have to be called page.tsx. 
+
+    but if you name it Create.tsx the name of the main function in the file would be name CreatePage.
+
+    you can visit the page by: 3000/example
+
+### a dynamic path:
+  app/users/[id]/page.tsx
+  the function inside the file would be IdPage().
+
+    you can get the function IdPage  by: 3000/users/123
+
+### grouping path:
+  app/(test)/monster/page.tsx.
+
+    you can get to the function MunsterPage by: 3000/monster
+
+  
+### To import fonts into your application:
+first import localFont from next/font/local 
